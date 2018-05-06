@@ -1,8 +1,11 @@
 <?php
 
-require_once __DIR__. '/AParti.php';
+require_once __DIR__. '/IPatri.php';
 
-class MotamutiSundorPatri extends APatri
+class MotamutiSundorPatri implements IPatri
 {
-
+    public function getName()
+    {
+        return 'Motamuti Sundor Patri';
+    }
 }
